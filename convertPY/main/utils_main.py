@@ -241,7 +241,7 @@ def write_ply(model_path, model):
     
     model_name = model_path.parent.name
     experiment_name = model_path.parts[1]  # e.g., 'my-experiment'
-    filename = model_path.parent / f"{experiment_name}_{model_name}_culled.ply"
+    filename = model_path.parent / f"{experiment_name}_{model_name}.ply"
     count, map_to_tensors = setup_write_ply(model)
 
     # Ensure count matches the length of all tensors
