@@ -5,7 +5,7 @@ def main():
     parser = argparse.ArgumentParser(prog="convert", description="convert ns model defined in config to ply")
     sub = parser.add_subparsers(dest="command", required=True)
     
-    p_cull = sub.add_parser("convert", help="Cull Gaussians from 3DGS model using binary masks")
+    p_cull = sub.add_parser("convert", help="Convert Nerfstudio Splatfacto config files to ply")
     p_cull.add_argument("--model-path", "-l", required=True,
                         help="path to 3DGS model's yaml configuration file")
     p_cull.add_argument("--output-dir", "-o", default=None,

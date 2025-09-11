@@ -31,10 +31,10 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/db-githb/gCull"
+"Homepage" = "https://github.com/db-githb/nscfg2ply"
 
 [project.scripts]
-gcull = "gCullCLI.cli_main:main"
+nscfg2plygcull = "convertCLI.cli_main:main"
 
 [tool.setuptools.packages.find]
-include = ["gCullCLI*", "gCullMASK*", "gCullPY*", "gCullUTILS*"]
+nscfg2ply = ["convertCLI*", "convertPY*", "convertUTILS*"]
