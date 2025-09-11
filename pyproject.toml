@@ -34,7 +34,7 @@ dependencies = [
 "Homepage" = "https://github.com/db-githb/nscfg2ply"
 
 [project.scripts]
-nscfg2plygcull = "convertCLI.cli_main:main"
+nscfg2ply = "convertCLI.cli_main:main"
 
 [tool.setuptools.packages.find]
-nscfg2ply = ["convertCLI*", "convertPY*", "convertUTILS*"]
+include = ["convertCLI*", "convertPY*", "convertUTILS*"]
