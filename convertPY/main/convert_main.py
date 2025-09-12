@@ -56,5 +56,5 @@ class Convert(BaseCull):
         filename = write_ply(self.model_path, pipeline.model)
         path = Path(filename)
         output_dir = config.datamanager.data.parents[1] / path.parent
-        linked_name = f"[link=file://{output_dir}/]{path.name}[/link]"
+        linked_name = f"[link=file://{path}/]{path}[/link]"
         CONSOLE.log(f"Finished: {linked_name}")
