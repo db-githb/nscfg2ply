@@ -161,7 +161,7 @@ def load_config(
     
     config = VanillaPipelineConfig(
         datamanager=dm_conf,
-        model=SplatfactoModelConfig(),
+        model=SplatfactoModelConfig(sh_degree=data["pipeline"]["model"]["sh_degree"]),
     )
 
     CONSOLE.log("Loading latest checkpoint from load_dir")

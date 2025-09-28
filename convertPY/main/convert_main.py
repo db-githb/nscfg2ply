@@ -46,6 +46,7 @@ class Convert(BaseCull):
 
     def run_convert(self):
         device = "cuda" if torch.cuda.is_available() else "cpu"
+        
         config, pipeline = load_config(
             self.model_path,
             test_mode="inference",
