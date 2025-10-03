@@ -56,5 +56,4 @@ class Convert(BaseCull):
         CONSOLE.log("Writing to ply...")
         filename = write_ply(self.model_path, pipeline.model)
         path = Path(filename)
-        linked_name = f"[link=file://{path}/]{path}[/link]"
-        CONSOLE.log(f"Finished: {linked_name}")
+        print(f"PLY FILE: {path}")
